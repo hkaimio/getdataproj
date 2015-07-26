@@ -7,5 +7,5 @@ subject and activity.
 
 ## Usage
 
-Execute the __run_analysis.r__ script in the top directory of the data set. Results 
-will be stored in file __summary.txt__ and also in R variable summary.
+Execute the __run_analysis.r__ script with working directory set to  top directory of 
+the data set. Results will be stored in file __summary.txt__ and also in R variable summary.
