@@ -23,26 +23,10 @@ From these signals, mean and standard deviation were calculated, and mean of the
 
 Naming of the feature columns is like this
 
-<feature name>_mean|std{_<axis>}
+    <feature name>_mean|std{_<axis>}
 
-Feature name is one of these (see above for explanation
+Feature name is one of  (see above for explanation) _tBodyAcc_, _tGravityAcc_, _tBodyAccJerk_, _tBodyGyro_, _tBodyGyroJerk_, _tBodyAccMag_, _tGravityAccMag_, _tBodyAccJerkMag_, _tBodyGyroMag_, _tBodyGyroJerkMag_, _fBodyAcc_, _fBodyAccJerk_. _fBodyGyro_, _fBodyAccMag_, _fBodyAccJerkMag_, _fBodyGyroMag_ or _fBodyGyroJerkMag_.
 
-tBodyAcc
-tGravityAcc
-tBodyAccJerk
-tBodyGyro
-tBodyGyroJerk
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc
-fBodyAccJerk
-fBodyGyro
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+_Mean_ or _std_ inidicate the function applied to the signals. If the resulting value is a vector, axis inidcates the component stored in the column.
 
-Mean & std inidicate the function applied to the signals. If the resulting value is a vector, axis inidcates the component stored in the column.
+If the feature is a vector, _axis_ inidicates the component stored in this column.
