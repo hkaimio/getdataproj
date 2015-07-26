@@ -1,3 +1,15 @@
+# Getting & Cleaing Data course project work
+# copyright (c) 2015 Harri Kaimio
+
+# This script merges the feature vectors from both training and test part of  UCI human 
+# activity recognition data set, extracts mean and standard deviation of each measured 
+# parameter for each sample and summarizes these by calculating mean for those for each 
+# subject and activity.
+
+# usage: Execute the run_analysis.r script in the top directory of the data set. Results 
+# will be stored in file summary.txt and also in R variable summary.
+
+
 library(dplyr)
 library(tidyr)
 
@@ -46,6 +58,8 @@ summarizeHARData <- function(dir)
     spread(feature, avg)
   
   summary
-  #summaryFileName = paste( dir, "summary.txt", sep = "/")
-  #write.table( summary, summaryFileName, row.name = FALSE )
 }
+
+summary <- summarizeHARData( "." )
+write.table( summary, "summary.txt", row.name = FALSE )
+
